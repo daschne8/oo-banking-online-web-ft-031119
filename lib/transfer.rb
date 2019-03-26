@@ -34,7 +34,4 @@ end
 
 
 
-a = BankAccount.new("a")
-b = BankAccount.new("b")
-tran = Transfer.new(a,b,50)
-binding.pry
+
