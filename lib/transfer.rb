@@ -16,7 +16,7 @@ class Transfer
       if @sender.balance >= @amount
         @sender.balance -= @amount
         @receiver.balance += @amount
-        @status = "completed"
+        @status = "complete"
       else
         @status = "rejected"
         "Transaction rejected. Please check your account balance."
@@ -24,7 +24,7 @@ class Transfer
     end
   end
   def reverse_transfer
-    if @status == "completed"
+    if @status == "complete"
       @status = "reversed"
       @sender.balance += @amount
       @receiver.balance -= @amount
