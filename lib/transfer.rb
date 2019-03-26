@@ -1,3 +1,4 @@
+require 'pry'
 class Transfer
   attr_accessor  :status
   attr_reader :sender, :receiver, :amount
@@ -29,3 +30,9 @@ class Transfer
     end
   end
 end
+
+
+
+a = BankAccount.new("a")
+b = BankAccount.new("b")
+binding.pry
